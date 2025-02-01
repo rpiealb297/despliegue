@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Clona el repo con el código React
-                git clone 'https://github.com/rpiealb297/despliegue.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 // Copia el código al contenedor Node
