@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clona el repo con el código React
-                git url: 'https://github.com/rpiealb297/despliegue.git'
+                git clone 'https://github.com/rpiealb297/despliegue.git'
             }
         }
 
